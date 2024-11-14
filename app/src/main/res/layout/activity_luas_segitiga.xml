@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF1FA"
+    android:orientation="vertical"
+    android:padding="13dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLuasSegitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="50sp"
+        android:text="Luas Segitiga"
+        android:textAlignment="center"
+        android:textColorLink="#181D35"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAlas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7sp"
+            android:layout_weight="1"
+            android:text="Alas"
+            android:textColorLink="#181D35"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/editAlas"
+            android:layout_width="0dp"
+            android:layout_height="30sp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_edittext"
+            android:hint="   Masukkan Alas"
+            android:inputType="numberDecimal"
+            android:text=""
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTinggi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7sp"
+            android:layout_weight="1"
+            android:text="Tinggi"
+            android:textColorLink="#181D35"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/editTinggi"
+            android:layout_width="0dp"
+            android:layout_height="30sp"
+            android:layout_weight="2"
+            android:background="@drawable/rounded_edittext"
+            android:hint="   Masukkan Tinggi"
+            android:inputType="numberDecimal"
+            android:text=""
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7sp"
+        android:layout_marginBottom="8dp"
+        android:text="Hasil"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7sp"
+        android:layout_marginBottom="10dp"
+        android:focusable="false"
+        android:hint="Hasil luas segitiga"
+        android:inputType="numberDecimal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Hitung"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4F70A8"
+            android:text="Hitung"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#012D40"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_Hapus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4F70A8"
+            android:text="Hapus"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#012D40"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

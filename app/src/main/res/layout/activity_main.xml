@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF1FA"
+    android:orientation="vertical"
+    android:padding="13dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_marginBottom="30sp"
+        android:src="@drawable/aespalogo1" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7sp"
+        android:layout_marginBottom="5sp"
+        android:text="Username"
+        android:textColorLink="#181D35"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Masukkan email Anda"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="13dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7sp"
+        android:layout_marginBottom="5sp"
+        android:text="Password"
+        android:textColorLink="#181D35"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25sp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Masukkan Password Anda"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="13dp"
+        android:text="" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="25sp"
+            android:backgroundTint="#4F70A8"
+            android:text="Login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#012D40"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
