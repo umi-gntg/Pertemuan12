@@ -97,7 +97,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etHasil"
+        android:id="@+id/Hasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="7sp"

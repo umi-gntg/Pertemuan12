@@ -7,8 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 
 public class MenuUtama extends AppCompatActivity {
+    Button btoLS, btoAbout, btoKeluar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +24,32 @@ public class MenuUtama extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        btoLS = findViewById(R.id.btn_LuasSegitiga);
+        btoAbout = findViewById(R.id.btn_About);
+        btoKeluar = findViewById(R.id.btn_Keluar);
+
+        btoLS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =  new Intent(MenuUtama.this, LuasSegitiga.class);
+                startActivity(intent);
+            }
+        });
+
+        btoAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuUtama.this,About.class);
+                startActivity(intent);
+            }
+        });
+
+        btoKeluar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 }
